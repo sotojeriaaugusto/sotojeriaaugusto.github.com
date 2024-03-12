@@ -214,32 +214,31 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-    .logo img[src="gesa.png"] {
+.logo img[src="gesa.png"] {
         display: none;
-    }
+}
 
-    .logo img[src="gamma.png"] {
-        display: block;
-        margin: 0 auto;
-        max-width: 80%;
-        height: auto;
-    }
+.logo img[src="gamma.png"] {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    height: auto;
+}
 
-    .header video {
-        max-width: 100%;
-        height: auto;
-    }
+.header video {
+    max-width: 100%;
+    height: auto;
+}
 
-    .video-container iframe {
-        max-width: 60%;
-        height: auto;
-    }
+.video-container iframe {
+    max-width: 60%;
+    height: auto;
+}
 
-    .social-icons {
-        margin-top: 20px;
-    }
+.social-icons {
+    margin-top: 20px;
+}
 
-    .social-icons li {
-        margin: 0 5px;
-    }
+.social-icons li {
+    margin: 0 5px;
 }
