@@ -212,3 +212,62 @@ footer {
     font-size: 20px;
     text-decoration: none;
 }
+
+@media only screen and (max-width: 768px) {
+    .head {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .logo {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
+        height: auto;
+    }
+
+    .btn-home {
+        text-align: center;
+    }
+
+    .btn-home a {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .header {
+        height: auto !important;
+    }
+
+    .header video {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .video-container iframe {
+        width: 100%; /* Ancho deseado */
+        height: auto; /* Alto deseado */
+    }
+
+    .social-icons {
+        margin-top: 20px;
+    }
+
+    .social-icons li {
+        margin: 0 5px;
+    }
+}
