@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
@@ -18,7 +18,7 @@ body {
     height: 33px;
     background: #000000;
     position: fixed;
-    top: 0; 
+    top: 0;
     left: 0;
     right: 0;
     width: 100%;
@@ -63,13 +63,8 @@ body {
 }
 
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
-    height: 60vh !important;
-    background: url(header.jpg) no-repeat center;
-    background-size: cover;
+    height: 60vh;
 }
 
 .header video {
@@ -165,8 +160,8 @@ p {
 
 .embed {
     margin: 0 10px;
-    width: 300px; /* Ancho deseado */
-    height: 380px; /* Alto deseado */    
+    width: 300px;
+    height: 380px;
 }
 
 .embed iframe {
@@ -181,7 +176,7 @@ p {
 }
 
 video {
-    width: 80%;
+    width: 100%;
     display: block;
     margin: auto;
 }
@@ -192,8 +187,8 @@ video {
 }
 
 .video-container iframe {
-    width: 640px; /* Ancho deseado */
-    height: 320px; /* Alto deseado */
+    width: 100%;
+    height: auto;
 }
 
 footer {
