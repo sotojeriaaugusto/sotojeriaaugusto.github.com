@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     border: 0;
@@ -18,7 +18,7 @@ body {
     height: 33px;
     background: #000000;
     position: fixed;
-    top: 0;
+    top: 0; 
     left: 0;
     right: 0;
     width: 100%;
@@ -63,8 +63,13 @@ body {
 }
 
 .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    height: 60vh;
+    height: 60vh !important;
+    background: url(header.jpg) no-repeat center;
+    background-size: cover;
 }
 
 .header video {
@@ -160,8 +165,8 @@ p {
 
 .embed {
     margin: 0 10px;
-    width: 300px;
-    height: 380px;
+    width: 300px; /* Ancho deseado */
+    height: 380px; /* Alto deseado */    
 }
 
 .embed iframe {
@@ -176,7 +181,7 @@ p {
 }
 
 video {
-    width: 100%;
+    width: 80%;
     display: block;
     margin: auto;
 }
@@ -187,8 +192,8 @@ video {
 }
 
 .video-container iframe {
-    width: 100%;
-    height: auto;
+    width: 640px; /* Ancho deseado */
+    height: 320px; /* Alto deseado */
 }
 
 footer {
@@ -211,34 +216,4 @@ footer {
     color: #ffffff;
     font-size: 20px;
     text-decoration: none;
-}
-
-@media only screen and (max-width: 768px) {
-.logo img[src="gesa.png"] {
-        display: none;
-}
-
-.logo img[src="gamma.png"] {
-    display: block;
-    margin: 0 auto;
-    max-width: 80%;
-    height: auto;
-}
-
-.header video {
-    max-width: 100%;
-    height: auto;
-}
-
-.video-container iframe {
-    max-width: 60%;
-    height: auto;
-}
-
-.social-icons {
-    margin-top: 20px;
-}
-
-.social-icons li {
-    margin: 0 5px;
 }
