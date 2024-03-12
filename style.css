@@ -172,6 +172,8 @@ p {
 .embed iframe {
     display: block;
     margin: 0 auto;
+    max-width: 100%; /* Ajuste */
+    height: auto;
 }
 
 .video-title {
@@ -192,8 +194,8 @@ video {
 }
 
 .video-container iframe {
-    width: 640px; /* Ancho deseado */
-    height: 320px; /* Alto deseado */
+    max-width: 100%; /* Ajuste */
+    height: auto;
 }
 
 footer {
@@ -219,7 +221,7 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-    .header .logo img[src="gesa.png"] {
+.header .logo img[src="gesa.png"] {
     display: none;
 }
 
