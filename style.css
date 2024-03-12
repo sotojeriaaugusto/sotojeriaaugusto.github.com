@@ -258,9 +258,13 @@ footer {
         padding: 20px;
     }
 
+    .video-container {
+        text-align: center;
+    }
+
     .video-container iframe {
-        width: 100%; /* Ancho deseado */
-        height: auto; /* Alto deseado */
+        max-width: 100%;
+        height: auto;
     }
 
     .social-icons {
