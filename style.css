@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
@@ -18,7 +18,7 @@ body {
     height: 33px;
     background: #000000;
     position: fixed;
-    top: 0; 
+    top: 0;
     left: 0;
     right: 0;
     width: 100%;
@@ -63,13 +63,8 @@ body {
 }
 
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
-    height: 60vh !important;
-    background: url(header.jpg) no-repeat center;
-    background-size: cover;
+    height: 60vh;
 }
 
 .header video {
@@ -165,15 +160,13 @@ p {
 
 .embed {
     margin: 0 10px;
-    width: 300px; /* Ancho deseado */
-    height: 380px; /* Alto deseado */    
+    width: 300px;
+    height: 380px;
 }
 
 .embed iframe {
     display: block;
     margin: 0 auto;
-    max-width: 100%; /* Ajuste */
-    height: auto;
 }
 
 .video-title {
@@ -183,7 +176,7 @@ p {
 }
 
 video {
-    width: 80%;
+    width: 100%;
     display: block;
     margin: auto;
 }
@@ -194,7 +187,7 @@ video {
 }
 
 .video-container iframe {
-    max-width: 100%; /* Ajuste */
+    width: 100%;
     height: auto;
 }
 
@@ -221,34 +214,72 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-    /* Modificaciones para dispositivos móviles */
-
-    .header .logo img[src="gesa.png"] {
-        display: none;
+    .head {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .header .logo img[src="gamma.png"] {
-        display: block;
-        margin: 0 auto;
-        max-width: 80%; 
+    .navbar {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .logo {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
         height: auto;
     }
 
-    .head .logo img[src="gesa.png"] {
+    .btn-home {
+        text-align: center;
+    }
+
+    .btn-home a {
         display: inline-block;
+        margin: 10px;
+    }
+
+    .header {
+        height: 100vh !important;
     }
 
     .header video {
-        max-width: 100%;
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
         height: auto;
+        object-fit: cover;
+    }
+
+    .logo {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%; /* Ajustar según sea necesario */
+        height: auto;
+    }
+    
+    .content {
+        padding: 20px;
+    }
+
+    .video-container {
+        text-align: center;
+        margin-top: 20px;
     }
 
     .video-container iframe {
-        max-width: 100%;
+        max-width: 70%;
         height: auto;
     }
 
     .social-icons {
         margin-top: 20px;
+    }
+
+    .social-icons li {
+        margin: 0 5px;
     }
 }
