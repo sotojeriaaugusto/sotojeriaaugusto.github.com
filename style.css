@@ -221,7 +221,7 @@ footer {
     .logo img[src="gamma.png"] {
         display: block;
         margin: 0 auto;
-        max-width: 60%;
+        max-width: 80%;
         height: auto;
     }
 
@@ -231,7 +231,7 @@ footer {
     }
 
     .video-container iframe {
-        max-width: 70%;
+        max-width: 60%;
         height: auto;
     }
 
