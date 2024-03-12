@@ -217,3 +217,37 @@ footer {
     font-size: 20px;
     text-decoration: none;
 }
+
+@media only screen and (max-width: 768px) {
+    .header .logo img[src="gesa.png"] {
+    display: none;
+}
+
+.header .logo img[src="gamma.png"] {
+    display: block;
+    margin: 0 auto;
+    max-width: 40%;
+    height: auto;
+}
+
+.head .logo img[src="gesa.png"] {
+    display: inline-block;
+}
+
+.header video {
+    max-width: 100%;
+    height: auto;
+}
+
+.video-container iframe {
+    max-width: 70%;
+    height: auto;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons li {
+    margin: 0 5px;
+}
