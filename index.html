@@ -1,252 +1,98 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-body {
-    text-align: center;
-    font-family: 'EB Garamond', serif;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4fe68dd8c7.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
 
-.head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 33px;
-    background: #000000;
-    position: fixed;
-    top: 0; 
-    left: 0;
-    right: 0;
-    width: 100%;
-    z-index: 100;
-}
+    <title>Gesaffelstein | Augusto Soto</title>
+    <link rel="icon" type="favicon" href="favicon.png">
+</head>
 
-.navbar {
-    display: flex;
-    align-items: center;
-    margin-right: 30px;
-}
+<body style="background-color:#000000;">
+    
+    <div class="head">
+        <div class="logo">
+            <a href="#"><img src="gesa.png" alt=""></a>
+        </div>
+        <nav class="navbar">
+            <a href="#">STORE</a>
+            <a href="#">TOUR</a>
+            <a href="#">MUSIC</a>
+        </nav>
+    </div>
+    
+    <header class="content header">
+        <video autoplay loop muted autoplaysinline style="width: 100%; height: 100%;">
+            <source src="GAMMA.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+    
+        <!-- Resto del contenido -->
+        <!-- title -->
+        <img src="gesa.png" alt="">
+        <div class="btn-home">
+            <a href="https://www.youtube.com/watch?v=txiBdjUoyBo&ab_channel=GesaffelsteinChannel" class="btn">Watch The Trailer</a>
+            <a href="https://gesaffelstein.lnk.to/GAMMAPreOrder" class="btn">Pre-Save The Album</a>            
+        </div>
+    </header>
 
-.logo {
-    margin-left: 30px;
-    max-width: 150px;
-    height: auto;
-}
+    <section class="content sau">
+        <img src="gamma.png" alt="">
+        <!-- video player -->
+        <p>Gesaffelstein's new album is set to be released on March 29th. The first single from this album, titled "Hard Dreams," was released on March 1st and features Yan Wagner.</p>
+        <p>Web designed by Augusto Soto</p>
+        <iframe src="https://player.vimeo.com/video/919166352?h=96c3a0c15a" width="640" height="360" frameborder="0" 
+        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>     
+    
+        <div class="box-container">
+            <div class="box">
+                <i class="fab fa-angular"></i>
+                <p>"Hard Dreams" is just the first track from Gesaffelstein's upcoming album titled GAMMA, set to be released on March 29th. It serves as the opening track of six, featuring Yan Wagner.</p>
+            </div>        
+        </div>
+       
+        <div class="video-container">
+            <p class="video-title">WATCH THE TRAILER</p>
+            <video id="trailer" width="640" height="380" autoplay loop>
+                <source src="gammavid.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var video = document.getElementById("trailer");
+                video.play();
+            });
+            </script>
 
-.logo a {
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 20px;
-}
+    <section class="music">
+        <div class="embed">
+            <!-- Embed de Spotify -->
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/3hteYQFiMFbJY7wS0xDymP?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </section>
+    
+    <section class="content contact">
+        <h2 class="title">Sitio diseñado por Augusto Soto. © All rights reserved. Gesaffelstein, 2024</h2>
+        <figure class="mapa">
+            <img src="logo-gamma.jpg" height="220px" width="100%" alt="mapa">
+        </figure>
+    </section>
 
-.logo img {
-    max-height: 100%;
-    max-width: 100%;
-}
+    <footer>
+        <ul class="social-icons">
+            <li><a href="https://web.facebook.com/gesaffelsteinmusic/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/gesafflstein" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/gesaffelsteinchannel" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </footer>
+    
+</body>
 
-.navbar a {
-    display: block;
-    padding: 20px 20px;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 15px;
-}
-
-.navbar a:hover {
-    background: #262626;
-}
-
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 60vh !important;
-    background: url(header.jpg) no-repeat center;
-    background-size: cover;
-}
-
-.header video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.title {
-    max-width: 100%;
-    display: block;
-    margin: 0;
-    margin-bottom: 40px;
-    font-size: 60%;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #fff;
-    position: relative;
-    z-index: 1;
-}
-
-p {
-    margin-bottom: 40px;
-    font-size: 18px;
-    color: #fff;
-    padding: 0 100px;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10% 40px;
-    border: 2px solid #000000;
-    color: #fff;
-    text-decoration: none;
-    background: #000000;
-}
-
-.btn:hover {
-    background: none;
-}
-
-.btn-home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-}
-
-.btn-home a {
-    margin: 0 10px;
-}
-
-.content {
-    display: block;
-    clear: both;
-    overflow: auto;
-}
-
-.mapa img {
-    max-width: 100%;
-    height: auto;
-}
-
-.sau {
-    padding: 30px;
-    background: #000000;
-    margin-bottom: 20px;
-}
-
-.contact {
-    padding-top: 20px;
-    background: #000000;
-    padding-bottom: 20px;
-}
-
-.contact .mapa img {
-    max-width: 100%;
-    width: 20%;
-    height: auto;
-}
-
-.music {
-    display: flex;
-    justify-content: center;
-    background-color: #000;
-    padding: 20px;
-}
-
-.embed {
-    margin: 0 10px;
-    width: 300px; 
-    height: 380px;    
-}
-
-.embed iframe {
-    display: block;
-    margin: 0 auto;
-}
-
-.video-title {
-    font-size: 24px;
-    margin-bottom: 10px;
-    margin-top: 0;
-}
-
-video {
-    width: 80%;
-    display: block;
-    margin: auto;
-}
-
-.video-container {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.video-container iframe {
-    width: 640px; 
-    height: 320px; 
-}
-
-footer {
-    background-color: #000000;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.social-icons {
-    list-style-type: none;
-    padding: 0;
-}
-
-.social-icons li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-.social-icons a {
-    color: #ffffff;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-@media only screen and (max-width: 768px) {
-.header .logo img[src="gamma.png"] {
-    display: block;
-    margin: 0 auto;
-    max-width: 80%; 
-    height: auto;
-}
-
-.head .logo img[src="gesa.png"] {
-    display: none;
-}
-
-.sau iframe {
-    max-width: 100%; 
-    height: auto;
-}
-
-.video-container iframe {
-    max-width: 100%; 
-    height: auto;
-}
-
-.contact .mapa img {
-    max-width: 100%; 
-    height: auto;
-}
-
-.music .embed iframe {
-    max-width: 100%; 
-    height: auto;
-    }
-}
+</html>
