@@ -165,15 +165,13 @@ p {
 
 .embed {
     margin: 0 10px;
-    width: 300px; /* Ancho deseado */
-    height: 380px; /* Alto deseado */    
+    width: 300px; 
+    height: 380px;    
 }
 
 .embed iframe {
     display: block;
     margin: 0 auto;
-    max-width: 100%; /* Ajuste */
-    height: auto;
 }
 
 .video-title {
@@ -194,8 +192,8 @@ video {
 }
 
 .video-container iframe {
-    max-width: 100%; /* Ajuste */
-    height: auto;
+    width: 640px; 
+    height: 320px; 
 }
 
 footer {
@@ -221,35 +219,34 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-.header .logo img[src="gesa.png"] {
-    display: none;
-}
-
 .header .logo img[src="gamma.png"] {
     display: block;
     margin: 0 auto;
-    max-width: 40%;
+    max-width: 80%; 
     height: auto;
 }
 
 .head .logo img[src="gesa.png"] {
-    display: inline-block;
+    display: none;
 }
 
-.header video {
-    max-width: 100%;
+.sau iframe {
+    max-width: 100%; 
     height: auto;
 }
 
 .video-container iframe {
-    max-width: 70%;
+    max-width: 100%; 
     height: auto;
 }
 
-.social-icons {
-    margin-top: 20px;
+.contact .mapa img {
+    max-width: 100%; 
+    height: auto;
 }
 
-.social-icons li {
-    margin: 0 5px;
+.music .embed iframe {
+    max-width: 100%; 
+    height: auto;
+    }
 }
