@@ -221,25 +221,27 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-.header .logo img[src="gesa.png"] {
-    display: none;
-}
+    /* Modificaciones para dispositivos móviles */
 
-.header .logo img[src="gamma.png"] {
-    display: block;
-    margin: 0 auto;
-    max-width: 40%;
-    height: auto;
-}
+    .header .logo img[src="gesa.png"] {
+        display: none;
+    }
 
-.head .logo img[src="gesa.png"] {
-    display: inline-block;
-}
+    .header .logo img[src="gamma.png"] {
+        display: block;
+        margin: 0 auto;
+        max-width: 80%; 
+        height: auto;
+    }
 
-.header video {
-    max-width: 100%;
-    height: auto;
-}
+    .head .logo img[src="gesa.png"] {
+        display: inline-block;
+    }
+
+    .header video {
+        max-width: 100%;
+        height: auto;
+    }
 
     .video-container iframe {
         max-width: 100%;
