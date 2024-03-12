@@ -241,11 +241,12 @@ footer {
     height: auto;
 }
 
-.video-container iframe {
-    max-width: 70%;
-    height: auto;
-}
+    .video-container iframe {
+        max-width: 100%;
+        height: auto;
+    }
 
-.social-icons {
-    margin-top: 20px;
+    .social-icons {
+        margin-top: 20px;
+    }
 }
