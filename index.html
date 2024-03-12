@@ -58,16 +58,18 @@
        
         <div class="video-container">
             <p class="video-title">WATCH THE TRAILER</p>
-                <iframe src="https://player.vimeo.com/video/922269231?autoplay=1&amp;controls=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-            </div>
+            <video id="trailer" width="640" height="380" autoplay loop>
+                <source src="gammavid.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
         </div>
-
+        
         <script>
             document.addEventListener("DOMContentLoaded", function() {
-                var iframe = document.getElementById('vimeo-video');
-                iframe.src += '&autoplay=1';
+                var video = document.getElementById("trailer");
+                video.play();
             });
-        </script>
+            </script>
 
     <section class="music">
         <div class="embed">
